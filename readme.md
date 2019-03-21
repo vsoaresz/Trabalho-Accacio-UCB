@@ -1,5 +1,5 @@
 ## Trabalho Faculdade Castelo Branco
 
-## Disciplica: Tópicos especiais em programação
+Disciplica: Tópicos especiais em programação
 
-## Professor: Luiz Roberto Accácio
+Professor: Luiz Roberto Accácio

@@ -20,13 +20,19 @@
             <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-2 mb-1 text-muted">
                     <i class="fa fa-address-book fa-md"></i>
                     <span>Turma</span>
-                </h6>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="far fa-circle fa-sm"></i>
-                        Cadastro
-                    </a>
-                </li>    
+            </h6>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="far fa-circle fa-sm"></i>
+                    Cadastro
+                </a>
+            </li>  
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('turma.det')}}">
+                    <i class="far fa-circle fa-sm"></i>
+                    Detalhes
+                </a>
+            </li>  
         </ul>
     </div>
 

@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('professor/create', function () {
     return view('professor.create');
 })->name('professor.create');
+
+Route::get('turma/det', function () {
+    return view('professor.det');
+})->name('turma.det');
