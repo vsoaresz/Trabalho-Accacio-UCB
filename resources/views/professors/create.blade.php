@@ -3,7 +3,8 @@
 @section('title', 'Cadastro professor')
 
 @section('content')
-<form>
+<form method="POST" action="{{route('professors.store')}}">
+    @csrf
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="name">Nome</label>

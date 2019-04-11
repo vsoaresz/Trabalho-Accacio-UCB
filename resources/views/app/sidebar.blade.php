@@ -6,15 +6,15 @@
                 <span>Professor</span>
             </h6>
             <li class="nav-item">
-                <a class="nav-link" href="{{route('professor.create')}}">
+                <a class="nav-link" href="{{route('professors.index')}}">
                     <i class="far fa-circle fa-sm"></i>
-                    Cadastro
+                    Visualizar
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{route('professor.view')}}">
+                <a class="nav-link" href="{{route('professors.create')}}">
                     <i class="far fa-circle fa-sm"></i>
-                    Visualizar
+                    Cadastro
                 </a>
             </li>
             <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-2 mb-1 text-muted">
