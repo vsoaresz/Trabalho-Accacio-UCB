@@ -38,8 +38,8 @@ class ProfessorController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required|unique:professors|alpha|min:5',
-            'email' => 'required|email',
+            'name' => 'required|string',
+            'email' => 'required|unique:professors|email',
             'address' => 'required',
             'city' => 'required',
             'state' => 'required',
@@ -56,9 +56,9 @@ class ProfessorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Professor $professor)
     {
-        //
+        return view('professors.show',compact('professor'));
     }
 
     /**
@@ -90,8 +90,11 @@ class ProfessorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Professor $professor)
     {
-        //
+        $professor->delete();
+  
+        return redirect()->route('professors.index')
+                        ->with('success','Professor deletado com sucesso!');
     }
 }

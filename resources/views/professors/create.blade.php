@@ -26,12 +26,12 @@
     </div>
     <div class="form-group">
         <label for="address">Endereço</label>
-        <input type="text" class="form-control" id="address" name="address">
+        <input type="text" class="form-control" id="address" name="address" value="{{old('address')}}">
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="city">Cidade</label>
-            <input type="text" class="form-control" id="city" name="city">
+            <input type="text" class="form-control" id="city" name="city" value="{{old('city')}}">
         </div>
         <div class="form-group col-md-4">
             <label for="state">Estado</label>
@@ -67,7 +67,7 @@
         </div>
         <div class="form-group col-md-2">
             <label for="zip">CEP</label>
-            <input type="text" class="form-control" id="zip" name="zip">
+            <input type="text" class="form-control" id="zip" name="zip" value="{{old('zip')}}">
         </div>
     </div>
     <button type="submit" class="btn btn-primary">Cadastrar</button>
