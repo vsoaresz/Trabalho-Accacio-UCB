@@ -37,6 +37,15 @@ class ProfessorController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'name' => 'required|unique:professors|alpha|min:5',
+            'email' => 'required|email',
+            'address' => 'required',
+            'city' => 'required',
+            'state' => 'required',
+            'zip' => 'required'
+        ]);
+
         Professor::create($request->all());
         return redirect()->route('professors.index');
     }

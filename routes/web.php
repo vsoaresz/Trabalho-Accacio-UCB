@@ -11,13 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('professor.view');
-})->name('professor.view');
-
+Route::get('/',  'ProfessorController@index');
 Route::resource('professors', 'ProfessorController');
 
 
 Route::get('turma/det', function () {
     return view('professor.det');
 })->name('turma.det');
+
+Route::get('/referencia', 'ReferenciaController@index');
